@@ -5,7 +5,7 @@ import math
 dataset = []
 
 # Сбор данных из CSV файла в "dataset"
-with open('C:/Users/Danila/university-1/math_statistics/lab_2/developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
+with open('C:/Users/Danila/university-1/math_statistics/developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     
     for row in csv_reader:
@@ -109,22 +109,37 @@ else:
 print(f"8) Эксцесс - {excess}\n")
 
 
-plt.subplot(1, 2, 1)
-plt.plot(x_i1, m_i, color="black", marker='o', markersize=7)
-plt.grid(which='major')
-plt.title('Полигон')
-plt.xlabel('Кол-во коммитов в день')
-plt.ylabel('Количество программистов')
 
-plt.subplot(1, 2, 2)
-plt.plot(x_i1, w_xi, color="black", marker='o', markersize=7)
-plt.grid(which='major')
-plt.title('Кумулянта')
-plt.xlabel('Кол-во коммитов в день')
-plt.ylabel('Накопленные частоты')
-plt.yticks(w_xi)
 
-plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+# plt.subplot(1, 2, 1)
+# plt.plot(x_i1, m_i, color="black", marker='o', markersize=7)
+# plt.grid(which='major')
+# plt.title('Полигон')
+# plt.xlabel('Кол-во коммитов в день')
+# plt.ylabel('Количество программистов')
+
+# plt.subplot(1, 2, 2)
+# plt.plot(x_i1, w_xi, color="black", marker='o', markersize=7)
+# plt.grid(which='major')
+# plt.title('Кумулянта')
+# plt.xlabel('Кол-во коммитов в день')
+# plt.ylabel('Накопленные частоты')
+# plt.yticks(w_xi)
+
+# plt.show()
 
 
 # print(*x_i1)

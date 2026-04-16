@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 dataset = []
 
 # Сбор данных из CSV файла в "dataset"
-with open('C:/Users/Danila/university-1/math_statistics/lab_2/developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
+with open('C:/Users/Danila/university-1/math_statistics/developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     
     for row in csv_reader:
@@ -100,24 +100,53 @@ else:
 print(f"8) Эксцесс - {excess}\n")
 
 
-plt.subplot(1, 2, 1)
-plt.plot(x_i, m_i, color="black", marker='o', markersize=7)
-plt.grid(which='major')
-plt.title('Полигон')
-plt.xlabel('Время работы в день (часы)')
-plt.ylabel('Количество программистов')
-plt.xticks(x_i)
 
-plt.subplot(1, 2, 2)
-plt.plot(x_i, w_xi, color="black", marker='o', markersize=7)
-plt.grid(which='major')
-plt.title('Кумулянта')
-plt.xlabel('Время работы в день (часы)')
-plt.ylabel('Накопленные частоты')
-plt.xticks(x_i)
-plt.yticks(w_xi)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# plt.subplot(1, 2, 1)
+# plt.plot(x_i, m_i, color="black", marker='o', markersize=7)
+# plt.grid(which='major')
+# plt.title('Полигон')
+# plt.xlabel('Время работы в день (часы)')
+# plt.ylabel('Количество программистов')
+# plt.xticks(x_i)
+
+# plt.subplot(1, 2, 2)
+# plt.plot(x_i, w_xi, color="black", marker='o', markersize=7)
+# plt.grid(which='major')
+# plt.title('Кумулянта')
+# plt.xlabel('Время работы в день (часы)')
+# plt.ylabel('Накопленные частоты')
+# plt.xticks(x_i)
+# plt.yticks(w_xi)
  
-plt.show()
+# plt.show()
 
 
 
