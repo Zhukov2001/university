@@ -5,7 +5,7 @@ import math
 dataset = []
 
 # Сбор данных из CSV файла в "dataset"
-with open('developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
+with open('C:/Users/Danila/university-1/math_statistics/lab_2/developer_burnout_dataset_7000.csv', mode='r', newline='') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     
     for row in csv_reader:
