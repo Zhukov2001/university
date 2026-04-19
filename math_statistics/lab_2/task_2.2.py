@@ -31,11 +31,11 @@ for j in range(1, len(m_i)):
     else:
         w_xi.append(tmp)
 
-# 1) ======Среднее значение признака=======
+# 1)Среднее значение признака
 arithmetic_mean = sum(x_i1) / len(x_i1)
 print(f"1) Среднее значение признака - {arithmetic_mean}\n")
 
-# 2) ========Дисперсия и среднее квадратическое отклонение=========
+# 2)Дисперсия и среднее квадратическое отклонение
 variance = 0
 for count in x_i1:
     variance += (count - arithmetic_mean)**2
@@ -45,11 +45,11 @@ print(f"2.1) Дисперсия - {variance}\n")
 mean_square = variance**0.5
 print(f"2.2) Cреднее квадратическое отклонение - {mean_square}\n")
 
-# 3) =========Мода======
+# 3)Мода
 mode = x_i[m_i.index(max(m_i))]
 print(f"3) Мода - {mode}\n")
 
-# 4) ======Медиана======
+# 4)Медиана
 median = 0 
 if len(x_i1) / 2 == 0:
     median = x_i1[len(x_i1) // 2]
@@ -57,12 +57,12 @@ else:
     median = (x_i1[len(x_i1) // 2] + x_i1[(len(x_i1) // 2) - 1]) / 2
 print(f"4) Медиана - {median}\n")
 
-# 5) ======Коэффициент вариации========
+# 5)Коэффициент вариации
 coefficient_variations = (mean_square / abs(arithmetic_mean)) * 100
 coefficient_variations = round(coefficient_variations, 1)
 print(f"5) Коэффициент вариации - {coefficient_variations}%\n")
 
-# 7) ========Коэффициент ассиметрии=======
+# 7)Коэффициент ассиметрии
 asymmetry_coefficient = 0
 for count in x_i1:
     asymmetry_coefficient += (count + arithmetic_mean)**3
@@ -71,7 +71,7 @@ else:
 
 print(f"7) Коэффициент ассиметрии - {asymmetry_coefficient}\n")
 
-# 8) =======Эксцесс======
+# 8)Эксцесс
 excess = 0
 for count in x_i1:
     excess += (count + arithmetic_mean)**3
