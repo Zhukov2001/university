@@ -8,11 +8,11 @@
 
 ![screenshot](images/screenshot_1.png)
 
-2. После скачивания, запускаем установочный файл и следуем инструкциям
+2. После скачивания - запускаем установочный файл и следуем инструкциям
 
 ![screenshot](images/screenshot_2.png)
 
-3. После завершения установки, откроется Docker Desktop
+3. После завершения установки - откроется Docker Desktop
 
 ![screenshot](images/screenshot_3.png)
 
@@ -26,7 +26,7 @@ cd C:\Users\Danila\grav
 ```
 ![screenshot](images/screenshot_4.png)
 
-2. Создаём файл _docker-compose.yml_ и копируем туда содержимое того же файла из официального репозитория
+2. Создаём файл _docker-compose.yml_ и копируем в него содержимое того же файла из официального репозитория
 
 ```powershell
 notepad docker-compose.yml
@@ -58,12 +58,12 @@ docker compose up -d
 
 ![screenshot](images/screenshot_7.png)
 
-4. После запуска контейнера ждём несколько минут, для того чтобы grav установился. Для проверки можно использовать команду:
+4. После запуска контейнера ждём несколько минут (для того чтобы grav установился). Для проверки можно использовать команду:
 
 ```powershell
 docker logs grav -f
 ```
-5. После вывода в консоль Grav installation complete! можем выйти **Ctrl+C**, и открыть в браузере _http://localhost:8080_
+5. После вывода в терминал "Grav installation complete!" можем выйти **Ctrl+C** из терминала, а после открыть в браузере _http://localhost:8080_
 
 ![screenshot](images/screenshot_8.png)
 
@@ -75,7 +75,7 @@ docker logs grav -f
 
 ![screenshot](images/screenshot_10.png)
 
-8. После заполнения информации мы войдём в панель администратора
+8. После заполнения информации, мы войдём в панель администратора
 
 ![screenshot](images/screenshot_11.png)
 
@@ -99,7 +99,7 @@ docker logs grav -f
 
 ![screenshot](images/screenshot_16.png)
 
-14. Переходим по ссылке _http://localhost:8080_ (без _admin/pages/test_) и мы можем посмотеть на нашу страницу без привилегий админа
+14. Переходим по ссылке _http://localhost:8080_ (без _admin/pages/test_) где мы можем посмотеть на нашу страницу без привилегий админа
 
 ![screenshot](images/screenshot_17.png)
 
