@@ -6,4 +6,4 @@
 
 ### Cтруктуру сайта кафедра ИТиЭО 
 
-![screenshot](images/screenshot_1.png)
+![screenshot](images/screenshot_1.jpg)
